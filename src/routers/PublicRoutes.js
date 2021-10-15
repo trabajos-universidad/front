@@ -8,7 +8,7 @@ import { AsideBar } from '../components/ui/AsideBar';
 
 export const PublicRoutes = () => {
   return (
-    <>
+    <div className="main-content">
       <AsideBar />
       <div>
         <Switch>
@@ -27,6 +27,6 @@ export const PublicRoutes = () => {
           <Redirect to="/productos" />
         </Switch>
       </div>
-    </>
+    </div>
   );
 };
