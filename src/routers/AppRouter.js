@@ -10,12 +10,10 @@ import { PublicRoutes } from './PublicRoutes';
 export const AppRouter = () => {
   return (
     <Router>
-      <div>
-        <Switch>
-          <Route exact path="/login" component={LoginScreen} />
-          <Route path="/" component={PublicRoutes} />
-        </Switch>
-      </div>
+      <Switch>
+        <Route exact path="/login" component={LoginScreen} />
+        <Route path="/" component={PublicRoutes} />
+      </Switch>
     </Router>
   );
 };
