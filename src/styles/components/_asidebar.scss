@@ -1,11 +1,21 @@
 .main-content {
-  display: flex;
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+}
+
+.main__page {
+  grid-column-start: 3;
+  grid-column-end: 12;
 }
 
 .asidebar {
+  grid-column-start: 1;
+  grid-column-end: 3;
   background-color: $primary-color;
   height: 100vh;
-  width: 20%;
+  // width: 350px;
 }
 
 .asidebar__menu {
@@ -29,10 +39,6 @@
     color: black;
     padding-left: 10px;
     line-height: 60px;
-  }
-
-  &:last-child {
-    margin-top: 510px;
   }
 }
 

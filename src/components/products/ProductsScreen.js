@@ -1,9 +1,12 @@
 import React from 'react';
+import { Filtros } from './Filtros';
+import { ProductosList } from './ProductosList';
 
 export const ProductsScreen = () => {
   return (
-    <div>
-      <h1>Products Screen</h1>
+    <div className="Productos__main">
+      <Filtros />
+      <ProductosList />
     </div>
   );
 };

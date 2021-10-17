@@ -10,19 +10,11 @@ export const PublicRoutes = () => {
   return (
     <div className="main-content">
       <AsideBar />
-      <div>
+      <div className="main__page">
         <Switch>
           <Route exact path="/productos" component={ProductsScreen} />
-          <Route
-            exact
-            path="/registros"
-            component={RegistrosScreen}
-          />
-          <Route
-            exact
-            path="/dashboard"
-            component={DashboardScreen}
-          />
+          <Route exact path="/registros" component={RegistrosScreen} />
+          <Route exact path="/dashboard" component={DashboardScreen} />
           <Route exact path="/clientes" component={ClientesScreen} />
           <Redirect to="/productos" />
         </Switch>

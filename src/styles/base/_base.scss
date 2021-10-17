@@ -12,7 +12,10 @@ body {
 main {
   width: 100%;
 }
-
+img {
+  max-width: 100%;
+  display: block;
+}
 .mt-1 {
   margin-top: 5px;
 }
