@@ -1,36 +1,42 @@
+import { Button, Container, Row, Spacer } from '@nextui-org/react';
 import React from 'react';
 
 export const Filtros = () => {
   return (
-    <div className="Productos__filtros-main">
-      <form className="Productos__filtros-form">
-        <select
-          className="Productos__filtros-form-selected"
-          name="tipoProducto"
-        >
-          <option>Tipo de producto</option>
-          <option value="lavalosa">Lavalosa</option>
-          <option value="detergente">Detergente</option>
-          <option value="limpiaVidrios">Limpia vidrio</option>
-        </select>
-        <select className="Productos__filtros-form-selected" name="precio">
-          <option selected>Precio</option>
-          <option> $0 - $1500 </option>
-          <option> $1500 - $3000 </option>
-          <option> $3000 - +$3000 </option>
-        </select>
-        <select className="Productos__filtros-form-selected" name="stock">
-          <option selected>Stock</option>
-          <option>0 - 10</option>
-          <option>11 - 20</option>
-          <option>20 +</option>
-        </select>
-        <input
-          type="submit"
-          className="btn btn-secondary btn-font-weight"
-          value="aplicar"
-        />
-      </form>
-    </div>
+    <Container>
+      <Spacer y={1.5} />
+      <Row justify="center">
+        <form className="opciones">
+          <select name="tipoProducto">
+            <option defaultValue="none">Tipo de producto</option>
+            <option defaultValue="lavalosa">Lavalosa</option>
+            <option defaultValue="detergente">Detergente</option>
+            <option defaultValue="limpiaVidrios">Limpia vidrio</option>
+          </select>
+          <select name="precio">
+            <option defaultValue="none">Precio</option>
+            <option defaultValue="$0 - $1500"> $0 - $1500 </option>
+            <option defaultValue="$1500 - $3000"> $1500 - $3000 </option>
+            <option defaultValue="$1500 - $3000"> $3000 - +$3000 </option>
+          </select>
+          <select name="stock">
+            <option defaultValue="none">Stock</option>
+            <option defaultValue="0 - 10">0 - 10</option>
+            <option defaultValue="11 - 20">11 - 20</option>
+            <option defaultValue="20 +">20 +</option>
+          </select>
+          <Button
+            type="submit"
+            color="secondary"
+            auto
+            ghost
+            auto
+            style={{ marginTop: '9px', marginRight: '5px' }}
+          >
+            Aplicar
+          </Button>
+        </form>
+      </Row>
+    </Container>
   );
 };

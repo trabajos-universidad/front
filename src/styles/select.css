@@ -1,0 +1,26 @@
+.opciones {
+  width: 750px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.opciones select {
+  margin: 5px;
+  margin-top: 7px;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  background-color: #0070f3;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.opciones select:hover {
+  background-color: #2686fd;
+}
+
+.opciones select:enabled {
+  border-radius: 20px;
+}

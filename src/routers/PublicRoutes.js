@@ -1,16 +1,15 @@
-import React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { ClientesScreen } from '../components/cliente/ClientesScreen';
 import { DashboardScreen } from '../components/dashboard/DashboardScreen';
 import { ProductsScreen } from '../components/products/ProductsScreen';
 import { RegistrosScreen } from '../components/Registro/RegistrosScreen';
-import { AsideBar } from '../components/ui/AsideBar';
+import { Navbar } from '../components/ui/Navbar';
 
 export const PublicRoutes = () => {
   return (
-    <div className="main-content">
-      <AsideBar />
-      <div className="main__page">
+    <div>
+      <Navbar />
+      <div>
         <Switch>
           <Route exact path="/productos" component={ProductsScreen} />
           <Route exact path="/registros" component={RegistrosScreen} />

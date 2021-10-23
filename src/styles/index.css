@@ -1,0 +1,11 @@
+@import url('./menu.css');
+@import url('./select.css');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 1px;
+}
